@@ -1,0 +1,11 @@
+version: '3'
+services:
+  helloworld:
+    build: .
+    image: helloworld:latest
+    env_file: 
+      - development.env
+    expose:
+      - "80"
+    ports:
+      - "9000:80"
